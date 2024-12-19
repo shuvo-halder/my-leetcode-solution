@@ -1,7 +1,5 @@
 class Solution:
     def addTwoNumber(self, l1, l2):
-        l1 = [2,4,3]
-        l2 = [5,6,4]
         dummy = ListName()
         res = dummy
 
