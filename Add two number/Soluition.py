@@ -11,7 +11,7 @@ class Solution:
         self.next = next
 
     def addTwoNumbers(self, l1, l2):
-        dummy_head = Solution(0)
+        dummy_head = ListNode(0)
         current = dummy_head
         carry = 0
 
@@ -21,7 +21,7 @@ class Solution:
 
             total = val1 + val2 + carry
             carry = total // 10
-            current.next = Solution(total % 10)
+            current.next = ListNode(total % 10)
 
             current = current.next
             if l1:
@@ -30,4 +30,3 @@ class Solution:
                 l2 = l2.next
 
         return dummy_head.next
-
